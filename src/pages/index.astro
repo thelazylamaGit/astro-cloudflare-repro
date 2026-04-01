@@ -32,6 +32,7 @@ import {Button} from "$lib/components/ui/button/index.js"
       <Counter client:visible>
         <h1>Hello, Svelte!</h1>
         <Button client:load variant="outline">Button</Button>
+        <!-- Note client:only='svelte' does remove the error but the component shouldn't need it as client:load works fine here in previous versions of astro -->
         <Test client:load />
       </Counter>
     </main>
