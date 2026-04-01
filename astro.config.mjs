@@ -22,5 +22,9 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    // adding this causes The `$derived` rune is only available inside `.svelte` and `.svelte.js/ts` files
+    // resolve: {
+    //   noExternal: ["bits-ui"],
+    // },
   },
 })
